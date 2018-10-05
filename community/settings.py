@@ -129,3 +129,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+
+# custom user model
+
+AUTH_USER_MODEL = 'authentication.User'
