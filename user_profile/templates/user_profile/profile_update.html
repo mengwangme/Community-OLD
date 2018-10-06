@@ -7,9 +7,7 @@
 
 {% block head %}
   <link href="{% static 'css/profile.css' %}" rel="stylesheet">
-{#  <link href="{% static 'css/feeds.css' %}" rel="stylesheet">#}
   <script src="{% static 'js/jquery.bullseye-1.0-min.js' %}"></script>
-{#  <script src="{% static 'js/feeds.js' %}"></script>#}
 {% endblock head %}
 
 {% block main %}
@@ -23,7 +21,6 @@
           <p>{% trans 'Your are the' %} {{ user.id }} {% trans 'user.' %}</p>
           <p>{% trans 'Last login at' %} {{ user.last_login }} .</p>
         <div class="stream-update">
-{#          <a href="#"><span class="new-posts"></span> new posts</a>#}
         </div>
         <div class="load">
           <img style="height:12%" src="{{MEDIA_URL}}{{profile.avatar.url}}" alt="" class="img-circle img-responsive">

@@ -8,7 +8,6 @@ from django.views.generic import (
 
 from authentication.models import User
 from .models import Profile
-# from .forms import ProfileForm
 
 
 @method_decorator([login_required], name='dispatch')
