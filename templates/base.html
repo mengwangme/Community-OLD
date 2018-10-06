@@ -27,11 +27,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Community</a>
+                    <a class="navbar-brand" href="{% url 'questions:question_list' %}">Community</a>
                 </div>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">{% trans 'Q&A' %}</a></li>
+                        <li><a href="{% url 'questions:question_list' %}">{% trans 'Q&A' %}</a></li>
                     </ul>
 
                     {% if not hide_search %}
