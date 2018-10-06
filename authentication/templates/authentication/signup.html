@@ -12,6 +12,8 @@
 
   <div class="cover">
     <h1 class="logo"><a href="{% url 'home' %}">Community</a></h1>
+
+
     <div class="signup">
         <h2>{% trans 'Sign up for Community' %}</h2>
         <form  method="post" novalidate>
@@ -28,7 +30,6 @@
                     {% endfor %}
                 </div>
             {% endfor %}
-{#            {{ form | crispy }}#}
             <button type="submit" class="btn btn-primary btn-lg">{% trans 'Create an account' %}</button>
         </form>
     </div>

@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'authentication',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +135,11 @@ STATICFILES_DIRS = [
 # custom user model
 
 AUTH_USER_MODEL = 'authentication.User'
+
+# django.contrib.auth.urls
+
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
