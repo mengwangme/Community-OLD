@@ -5,7 +5,6 @@
 
 {% block head %}
     <link href="{% static 'css/login.css' %}" rel="stylesheet">
-    <link href="{% static 'css/signup.css' %}" rel="stylesheet">
 {% endblock head %}
 
 {% block main %}
@@ -23,8 +22,7 @@
         {% endif %}
 
 
-        <div class="signup">
-{#        <div class="col-lg-4 col-md-6 col-sm-8 col-12">#}
+        <div class="login">
             <h2>{% trans 'Log in' %}</h2>
             <form method="post" novalidate>
                 {% csrf_token %}
@@ -32,7 +30,7 @@
                 <div class="form-group{% if field.errors %} has-error{% endif %}">
                     <label for="{{ field.label }}">{{ field.label }}</label>
                     {{ field  }}
-                    {% if field.help_text %}
+                    {% if field.help_text %}git
                         <span class="help-block">{{ field.help_text|safe }}</span>
                     {% endif %}
                     {% for error in field.errors %}
@@ -46,9 +44,6 @@
         </div>
 
     </div>
-{#        </div>#}
-
-{#    </div>#}
 
 
 {% endblock main %}
